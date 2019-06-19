@@ -1,4 +1,4 @@
-'use strict';
+
 
 const fs = require('fs');
 const isWsl = require('is-wsl');
@@ -344,6 +344,9 @@ module.exports = function(webpackEnv) {
                 
                 plugins: [
                   [
+                    "import", {libraryName: "antd", style: 'css'} // 移动端添加 "libraryName": "antd-mobile"
+                  ], //antd按需加载
+                  [
                     require.resolve('babel-plugin-named-asset-import'),
                     {
                       loaderMap: {
@@ -369,7 +372,7 @@ module.exports = function(webpackEnv) {
               exclude: /@babel(?:\/|\\{1,2})runtime/,
               loader: require.resolve('babel-loader'),
               options: {
-                babelrc: false,
+                babelrc: true,
                 configFile: false,
                 compact: false,
                 presets: [

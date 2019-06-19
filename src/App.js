@@ -10,7 +10,12 @@ class App extends Component {
 		console.log(querys);
 		return (
 			<div className="App">
-				<Charts {...props} params={querys} />
+				{
+					querys && querys.token && querys.key ? (
+						<Charts {...props} params={querys} />
+					) : (<div>无权限访问！</div>)
+				}
+				
 			</div>
 		);
 	}

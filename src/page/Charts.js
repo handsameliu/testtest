@@ -33,7 +33,7 @@ export default class Charts extends Component {
             token: props.token,
             start_at: lastTime,
             end_at: nowTime,
-            dateTimes: [], // 数据分布的展示时间
+            dateTimes: [moment(lastTime, dateFormat), moment(nowTime, dateFormat),], // 数据分布的展示时间
             userDeviceDatas: {},
             isDiagnosed: false,
         };
@@ -323,7 +323,7 @@ export default class Charts extends Component {
                         <div>
                             <Row type="flex" justify="space-around" align="middle">
                                 <Col span={24}>
-                                    <FormItem label="时间范围" {...formItemLayout}>
+                                    <FormItem>
                                         {
                                             <RangePicker 
                                                 format="YYYY-MM-DD"
@@ -337,7 +337,7 @@ export default class Charts extends Component {
                                                 }}
                                             />
                                         }
-                                        <Button style={{marginLeft: 15}} ref={(ref)=>{this.submigRef = ref}} type="primary" htmlType="submit">查询</Button>
+                                        <Button style={{marginLeft: 15, backgroundColor: '#6c9ec6', borderColor: '#6c9ec6',}} ref={(ref)=>{this.submigRef = ref}} type="primary" htmlType="submit">查询</Button>
                                     </FormItem>
                                 </Col>
                             </Row>
