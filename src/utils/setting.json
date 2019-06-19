@@ -1,0 +1,6 @@
+{
+    "HOSTtest": "/workflow-api.semioe.com",
+    "HOST": "http://workflow-api.semioe.com",
+    "STAGE": "/s-workflow-api.semioe.com",
+    "STAGEHOST": "http://s-workflow-api.semioe.com"
+}

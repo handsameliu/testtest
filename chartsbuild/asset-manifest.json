@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/chartsbuild/static/css/main.f9c67ae1.chunk.css",
+    "main.js": "/chartsbuild/static/js/main.89cb70cc.chunk.js",
+    "main.js.map": "/chartsbuild/static/js/main.89cb70cc.chunk.js.map",
+    "runtime~main.js": "/chartsbuild/static/js/runtime~main.6bd4ceca.js",
+    "runtime~main.js.map": "/chartsbuild/static/js/runtime~main.6bd4ceca.js.map",
+    "static/js/2.7c1c4355.chunk.js": "/chartsbuild/static/js/2.7c1c4355.chunk.js",
+    "static/js/2.7c1c4355.chunk.js.map": "/chartsbuild/static/js/2.7c1c4355.chunk.js.map",
+    "index.html": "/chartsbuild/index.html",
+    "precache-manifest.0e91576adb3b7040538d1c0de797ccd2.js": "/chartsbuild/precache-manifest.0e91576adb3b7040538d1c0de797ccd2.js",
+    "service-worker.js": "/chartsbuild/service-worker.js",
+    "static/css/main.f9c67ae1.chunk.css.map": "/chartsbuild/static/css/main.f9c67ae1.chunk.css.map"
+  }
+}

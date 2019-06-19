@@ -2,7 +2,13 @@
   "name": "bizcharts_pages",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/chartsbuild",
   "dependencies": {
+    "@antv/data-set": "^0.10.2",
+    "antd": "^3.19.6",
+    "axios": "^0.19.0",
+    "bizcharts": "^3.5.4",
+    "moment": "^2.24.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -27,5 +33,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://workflow-api.semioe.com"
 }
