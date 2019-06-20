@@ -2,7 +2,7 @@
   "name": "bizcharts_pages",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/chartsbuild",
+  "homepage": "/charts",
   "dependencies": {
     "@antv/data-set": "^0.10.2",
     "@babel/core": "7.4.3",
@@ -16,7 +16,10 @@
     "babel-loader": "8.0.5",
     "babel-plugin-import": "^1.12.0",
     "babel-plugin-named-asset-import": "^0.3.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react-app": "^9.0.0",
+    "babel-preset-stage-2": "^6.24.1",
     "bizcharts": "^3.5.4",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
@@ -73,11 +76,20 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    "last 2 versions",
-    "android 4",
-    "opera 12"
-  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 11"
+    ]
+  },
   "proxy": "http://workflow-api.semioe.com",
   "jest": {
     "collectCoverageFrom": [
@@ -129,7 +141,13 @@
       "react-app"
     ],
     "plugins": [
-      ["import", { "libraryName": "antd-mobile", "style": true }]
+      [
+        "import",
+        {
+          "libraryName": "antd-mobile",
+          "style": true
+        }
+      ]
     ]
   }
 }
